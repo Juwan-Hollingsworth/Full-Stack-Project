@@ -1,0 +1,79 @@
+/* global settings */
+* {
+  /* background-color: #ebe9e7; */
+  font-weight: bold;
+  font-size: 16px;
+  /* color: black; */
+  font-family: "Montserrat", sans-serif;
+}
+
+/* nav menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* hide nav links */
+.topnav #links {
+  display: none;
+}
+
+/* style nav links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+/* style hamburger menu */
+.topnav a.icon {
+  background-color: #ebe9e7;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* mouseover effect */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* style active link */
+.active {
+  background-color: #aa2304;
+  color: white;
+}
+
+/* Body section  */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header {
+}
+
+.navbar__header {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  color: white;
+  background-color: #aa2304;
+}

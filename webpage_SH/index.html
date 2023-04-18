@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- import stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <!-- import hamburger icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- import font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+
+    <title class="title__header">Smart Home: Project</title>
+
+    <div class="header">
+
+
+    
+ <!-- navbar  -->
+      <div class="topnav">
+        <a href="#home" class="active">SafeHome 2 SmartHome</a>
+        <!-- nav links (hidden) -->
+        <div id = "links">
+          <a href="#products">Products</a>
+          <a href="#contact">Contact</a>
+          <a href="#login">Login</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <!-- navbar javascript --> 
+      <script>
+        function  navFunction(){
+          var x = document.getElementById("links");
+          if(x.style.display==="block"){
+            x.style.display = "none"
+          } else {
+            x.style.display = "block"
+          }
+        }
+      </script> 
+    </div>
+
+  </head>
+  <body>
+    <!-- tag-line section -->
+    <div class="row">
+      <div class="column L"><h3>A safer home is a smarter home</h3></div>
+
+      <!-- form section -->
+      <d class="column R">
+        <br>
+        <form>
+          <label for="fname">First Name:</label> </br>
+          <input type="text" id="fname" name="fname"><br>
+          <label for="fname">Last Name:</label> </br>
+          <input type="text" id="fname" name="lname"><br>
+          <label for="fname">Email:</label> </br>
+          <input type="text" id="fname" name="email"><br>
+        </form>
+        
+
+      </div>
+    </div>
+
+  </body>
+  <footer class="footer">
+    <h1>footer</h1>
+  </footer>
+</html>
