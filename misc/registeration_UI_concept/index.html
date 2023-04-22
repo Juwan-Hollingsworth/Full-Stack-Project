@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
+<div class="background">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,44 +20,19 @@
     <title class="title__header">Smart Home: Project</title>
 
     <div class="header">
-
-
-    
- <!-- navbar  -->
-      <div class="topnav">
-        <a href="#home" class="active">SafeHome 2 SmartHome</a>
-        <!-- nav links (hidden) -->
-        <div id = "links">
-          <a href="#products">Products</a>
-          <a href="#contact">Contact</a>
-          <a href="#login">Login</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="navFunction()">
-        <i class="fa fa-bars"></i>
-        </a>
-      </div>
-
-      <!-- navbar javascript --> 
-      <script>
-        function  navFunction(){
-          var x = document.getElementById("links");
-          if(x.style.display==="block"){
-            x.style.display = "none"
-          } else {
-            x.style.display = "block"
-          }
-        }
       </script> 
     </div>
 
   </head>
   <body>
     <!-- tag-line section -->
-    <div class="row">
-      <div class="column L"><h3>A safer home is a smarter home</h3></div>
+    <div class="box">
+      <img src="./assets/logo.svg" alt="Logo" class="logo">
+    <div class="form">
+      <!-- <div class="form__tagline"><h3>Upgrade your home's safety with our <br/>cutting-edge technology and expert industry tips. <br/>Sign up now for a smarter, safer home!</h3></div> -->
 
       <!-- form section -->
-      <d class="column R">
+      <div class="form__submission">
         <br>
         <form>
           <label for="fname">First Name:</label> </br>
@@ -66,14 +41,17 @@
           <input type="text" id="fname" name="lname"><br>
           <label for="fname">Email:</label> </br>
           <input type="text" id="fname" name="email"><br>
+          <label for="fname">Phone Number:</label> </br>
+          <input type="text" id="fname" name="email"><br>
+          <button class="form__btn">Submit</button>
         </form>
         
 
       </div>
     </div>
+    
 
   </body>
-  <footer class="footer">
-    <h1>footer</h1>
+</div>
   </footer>
 </html>
