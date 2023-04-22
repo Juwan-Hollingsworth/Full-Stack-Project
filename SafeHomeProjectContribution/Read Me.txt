@@ -1,0 +1,12 @@
+This is my implementation of the Smart home project. It primarily focuses on user management and device management. There are two classes of users in this system regular users and administrators. Administrators have their access level set to '0' on the "users" database table
+while regular users have their access level set to 1. Administrators have the broadest range of abilities which are listed below:
+
+1. Change passwords
+2. Create users.
+3. Delete users.
+4. Modify user data.
+5. Add smart objects
+6, Modify all smart objects.
+7. Delete all smart objects.
+
+Out of the 7 abilities listed above regular users only fully have abilities 1 and 5. And a reduced version of abilities 4,6, and 7. When it comes to device management, devices can be made to be shared or unshared. Shared devices have a '1' on their 'shared' attributes in the devices table while unshared attributes have a value of '0'. Shared devices can be seen by all users while unshared devices can only be seen by their owners. This rule doesn't apply to administrators however as they can see all devices. If you have a local version of sql developer installed and are interested, you can test out the project by running the sql commands at the bottom of the document to create the necessary databases and running the project in netbeans. I did my best to root out any bugs but wouldn't be surprised if there are many I missed. There are many features that I wanted to implement but am prevented from doing so due to time constraints. For example, I wanted to give users the ability to search for devices. I also wanted to implement a feature that allowed users to share private ownership. The layout could also be better. Feel free to fix things if you want. Also the only comments on the source are Dr. Qu's since I built the project on top of his work in class. Let me know if you have any questions.
